@@ -1,0 +1,250 @@
+/*font*/
+@font-face{ 
+	font-family: 'PTF55F-webfont';
+	src: url('fonts/PTF55F-webfont.eot');
+	src: url('fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/PTF55F-webfont.woff') format('woff'),
+		 url('fonts/PTF55F-webfont.ttf') format('truetype'),
+		 url('fonts/PTF55F-webfont.svg#cac_champagneregular') format('svg');
+}
+
+
+
+
+/*body*/
+body
+{
+	background-color: #ffa;
+	color: black;
+	font-size: 1em;
+	margin: 0px;
+}
+
+
+
+
+/*Header*/
+header
+{
+	z-index: 5;
+	width: 100%;
+	background: url(images/header_border.png) repeat-x bottom #ffff99 ; /*#ffffcf*/
+}
+
+nav
+{
+	width: 1100px;
+	height: 60px;
+	margin: auto;
+	display: flex;
+}
+
+#nav_list
+{
+	display: flex;  
+	flex-grow: 1;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+	font-family: "PTF55F-webfont", Arial, sans-serif;
+	font-size: 1.5em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav div
+{
+/*	border: 1px solid blue;*/
+	text-align: center;
+	width: 220px;
+}
+
+#nav_list li, #nav_list ul
+{
+	margin: 0px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+
+}
+#nav_list ul
+{
+	padding-bottom: 8px;
+	padding-top: 20px;	
+}
+/*	underline in drop down menu 	*/
+.underline_drop_down
+{
+	position: absolute;
+	bottom: -12px;
+	left: 28px;
+	z-index: 1;
+	display: none;
+}
+/*	hide drop down menu by default	*/
+.drop_down_nav_menu
+{
+	background: url(images/header_border_bottom.png) repeat-x bottom, url(images/header_border_left.png) repeat-y left, url(images/header_border_right.png) repeat-y right, #ffc;
+
+  display: none;
+  position: absolute;
+}
+/*	display drop down menu while hovering	*/
+#l_association_nav:hover .drop_down_nav_menu, #l_association_nav:hover .underline_drop_down{
+  display: block;
+}
+#actualite_nav:hover .drop_down_nav_menu, #actualite_nav:hover .underline_drop_down{
+  display: block;
+}
+#contact_nav:hover .drop_down_nav_menu, #contact_nav:hover .underline_drop_down{
+  display: block;
+}
+#divers_nav:hover .drop_down_nav_menu, #divers_nav:hover .underline_drop_down{
+  display: block;
+}
+/*	top borders of sections	*/
+#nav_list > div:hover:not(#accueil_nav)
+{
+	background: url(images/header_border_top.png) repeat-x top, url(images/header_border_left.png) repeat-y left, url(images/header_border_right.png) repeat-y right, #ffc;
+}
+/*	sections title divs 	*/
+#nav_list > div
+{
+	margin-top: -10px;
+	padding-top: 8px;
+	position: relative;
+}
+/*	hide list dots	*/
+ul
+{
+	list-style-type: none;
+}
+/*	color of non active section titles	*/
+nav a
+{
+	color: #444;
+	text-decoration: none;
+}
+/*	color of section titles when hovering	*/
+nav a:hover
+{
+	color: #aa0;
+}
+
+
+
+
+/*Footer*/
+footer
+{
+	width: 100%;
+	height: 165px;
+	background-color: rgba(170, 170, 170, 0.5);
+}
+#wrapper_footer_content
+{
+	text-align: center;
+	display: flex;
+	width: 1100px;
+	margin: auto;
+	display: flex;
+	line-height: 1;
+	justify-content: center;
+}
+#wrapper_footer_content h3
+{
+	margin-bottom: 2px;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+#footer_reseau_social a
+{
+	margin-left: 2px;
+	/*margin-bottom: 55px;*/
+	text-decoration: none;
+	color: #444;
+}
+#footer_reseau_social
+{
+	margin-left: 100px;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+/*Languages button*/
+.lang_ro
+{
+	display: none;
+}
+
+.lang_fr
+{
+	display: block;
+}
+
+#lang_option
+{
+	margin: -5px 50px 0px 0px;
+	position: fixed;
+	right: 50px;
+	top: 5px;
+}
+
+#lang_dropdown, #lang_option
+{
+	width: 47px;
+}
+
+#lang_dropdown
+{
+	display: none;
+	background: url(images/header_border_bottom.png) repeat-x bottom, url(images/header_border_left.png) repeat-y left, url(images/header_border_right.png) repeat-y right, #ffc;
+	position: absolute;
+	right: 0px;
+}
+
+#lang_option:hover
+{
+	background: url(images/header_border_top.png) repeat-x top, url(images/header_border_left.png) repeat-y left, url(images/header_border_right.png) repeat-y right, #ffc;
+}
+
+#lang_option, #lang_dropdown
+{
+	padding: 5px;
+	padding-bottom: 3px;
+}
+
+#lang_option:hover #lang_dropdown, #lang_option:hover #underline_lang_drop_down
+{
+	display: block;
+}
+
+#lang_option:hover
+{
+	background-color: #ffc;
+}
+
+#lang_option #lang_hover_button
+{
+	display: block;
+	margin-top: 0px;
+}
+
+.drapeau_button
+{
+	border-radius: 50%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: outset;
+	cursor: pointer;
+}
+
+#underline_lang_drop_down
+{
+	display: none;
+	margin: auto;
+	margin-top: 5px;
+	z-index: 1;
+}
