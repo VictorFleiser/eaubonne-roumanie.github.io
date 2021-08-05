@@ -1,0 +1,87 @@
+
+
+
+#divers_nav > a, #divers_ss_menu_nav li:nth-of-type(1) a 
+{
+	text-decoration: none;
+	color: #aa0;
+}
+
+
+
+
+
+
+
+#main_wrapper
+{
+/*  border: 1px solid black;    */
+	width: 1100px;
+	height: 2100px;
+	margin: auto;
+	font-family: "PTF55F-webfont", Arial, sans-serif;
+}
+
+
+
+.colorBlue
+{
+	color: blue;
+}
+
+.colorGreen
+{
+	color: #1d1;
+}
+
+.colorRed
+{
+	color: red;
+}
+.clear
+{
+	clear: right;
+}
+
+.visibility_hidden 
+{
+	visibility: hidden;
+}
+.float_right
+{
+	float: right;
+}
+
+#question8 label
+{
+	font-size: 0.835em;
+}
+
+#q8_images
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.correct
+{
+	color: #1d1;
+}
+.incorrect
+{
+	color: red;
+	text-decoration: line-through;
+}
+
+#messageFin, #messageDebut
+{
+	margin: 50px 0px;
+	font-size: 1.5em;
+}
+
+
+
+
+
+
+

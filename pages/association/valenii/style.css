@@ -1,0 +1,39 @@
+
+#l_association_nav > a, #l_association_ss_menu_nav li:nth-of-type(3) a 
+{
+	text-decoration: none;
+	color: #aa0;
+}
+
+
+
+#main_wrapper
+{
+/*  border: 1px solid black;    */
+	width: 1100px;
+	height: 2700px;
+	margin: auto;
+	font-size: 1.4em;
+	font-family: "PTF55F-webfont", Arial, sans-serif;
+}
+
+#main_wrapper ul
+{
+	list-style: disc;
+}
+
+#main_wrapper ol
+{
+	list-style: decimal;
+}
+
+.float
+{
+	float: right;
+}
+
+
+
+
+
+

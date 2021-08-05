@@ -1,0 +1,21 @@
+
+#divers_nav > a, #divers_ss_menu_nav li:nth-of-type(4) a 
+{
+	text-decoration: none;
+	color: #aa0;
+}
+
+
+
+#main_wrapper
+{
+/*  border: 1px solid black;    */
+	width: 1100px;
+	height: 600px;
+	margin: auto;
+	font-family: "PTF55F-webfont", Arial, sans-serif;
+	font-size: 1.4em;
+}
+
+
+
