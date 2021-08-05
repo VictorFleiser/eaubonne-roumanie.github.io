@@ -1,0 +1,45 @@
+
+#actualite_nav > a, #actualite_ss_menu_nav li:nth-of-type(1) a 
+{
+	text-decoration: none;
+	color: #aa0;
+}
+
+
+#main_wrapper
+{
+/*  border: 1px solid black;    */
+	width: 1100px;
+	height: 582px;
+	margin: auto;
+	font-size: 1.4em;
+	font-family: "PTF55F-webfont", Arial, sans-serif;
+}
+
+#main_wrapper li
+{
+	list-style: disc;
+}
+
+#image
+{
+    display: block;
+    margin: 0 auto;
+}
+
+#main_wrapper a
+{
+	color: #aa0;
+	text-decoration: none;
+}
+
+#main_wrapper a:hover
+{
+	text-decoration: underline;
+}
+
+
+
+
+
+
